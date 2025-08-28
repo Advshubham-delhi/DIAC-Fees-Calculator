@@ -1,0 +1,161 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Bree Serif', serif;
+  background-color: #f4fefd;
+  color: #043434;
+  margin: 0;
+  padding: 0px;
+}
+
+/* Header */
+.header-content {
+  text-align: center;
+  margin-bottom: 10px;
+}
+a {
+    color: inherit;       /* same as parent text color */
+    text-decoration: underline; /* removes underline */
+}
+
+a:hover {
+    color: #0077b5;       /* LinkedIn blue (optional) */
+    text-decoration: underline; /* underline on hover if you like */
+}
+
+
+.header-content .logo {
+  width: 200px;
+  margin-bottom: -40px;
+}
+
+.title-section h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+.title-section p {
+  margin: 5px 0 0;
+  font-size: 14px;
+ 
+}
+
+.diac-box p {
+	text-align: center;
+  margin: 5px 0 0;
+  font-size: 14px;
+ 
+}
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+    margin-bottom: 8px;
+  }
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+    border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 5px rgba(0,77,64,0.3);
+}
+
+/* Button */
+button {
+  background-color: #043434;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+
+/* Results box */
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #e6f9f7;
+  border: 1px solid #b2dfdb;
+}
+
+.result-box h3 {
+  margin-top: 0;
+  color: #004d40;
+}
+
+/* Button Base */
+.btn {
+  background: #003366;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.5s;
+}
+/* Button Base */
+.btn {
+  background: #003366;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Blink Animation */
+.blink {
+  animation: blinkHighlight 5s infinite;
+}
+
+@keyframes blinkHighlight {
+  0%, 100% {
+    background: #043434;
+    color: #fff;
+  }
+  50% {
+    background: #f4fefd;
+    color: #000;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #043434;
+  color: white;
+  margin-top: 40px;
+  font-size: 14px;
+}

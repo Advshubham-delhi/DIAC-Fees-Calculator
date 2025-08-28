@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIAC Fee Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="diac.js" defer></script>
+</head>
+<body>
+  <div class="header-content">
+    <a href="https://www.linkedin.com/company/fs-partners-advocates/" target="_blank">
+	<img src="logo.png" alt="FS & Partners Logo" class="logo">
+	</a>
+    <div class="title-section">
+      <h1>DIAC Fee Calculator</h1>
+      <p>(As per <a href="https://dhcdiac.nic.in/diac-administrative-cost-arbitrators-fees-rules-2018/" target="_blank">The Delhi International Arbitration Centre (Administrative Cost and Arbitrators Fees) Rules - 2018
+	  </a>)</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="input-group">
+      <label for="claimAmount">Enter Claim Amount (INR)</label>
+      <input type="number" id="claimAmount" placeholder="Total Claim Amount e.g., 5000000">
+    </div>
+
+    <div class="input-group">
+      <label for="tribunal">Tribunal Type</label>
+      <select id="tribunal">
+        <option value="sole" selected>Sole Arbitrator</option>
+        <option value="three">Three Arbitrators Tribunal</option>
+      </select>
+    </div>
+
+    <button onclick="calculateDIACFee()">Calculate Fee</button>
+
+    <div id="result" class="result-box" style="display:none;">
+      <h3>Calculation Result</h3>
+      <p><strong>Arbitrator's Fee:</strong> ₹<span id="arbFee"></span></p>
+      <p><strong>Administrative Fee:</strong> ₹<span id="adminFee"></span></p>
+      <p><strong>Total Fee:</strong> ₹<span id="totalFee"></span></p>
+    </div>
+  </div>
+<div class="diac-box">
+  <p>
+    Want to calculate fees as per Arbitration and Conciliation Act, 1996 Fourth Schedule? 
+	
+   <br> <a href="https://arbitratorsfeecalculator.fspartners.in/" class="btn blink">Go to Arbitrator's Fee Calculator</a>
+  </p></span>
+</div>
+  <footer>
+    <p> <a href="https://www.linkedin.com/company/fs-partners-advocates/" target="_blank">© 2025 FS & Partners | DIAC Fee Calculator</p>
+  </footer>
+</body>
+</html>
